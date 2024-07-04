@@ -67,14 +67,19 @@ a:hover {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    
 }
-
+.frame{
+    width: 100%;
+    background-image: url(../img/background.jpeg);
+}
 .slider-frame {
     width: 80%;
     margin: 50px auto 0;
     overflow: hidden;
+    
 }
 
 .slider-frame ul {
@@ -114,7 +119,152 @@ section h2, section h3 {
     margin-bottom: 20px;
     color: #333;
 }
+.foodprincipal{
 
+    background-image: url(../img/backgraund2.jpeg);
+}
+
+/* Sección Platos a la Carta */
+.platoscarta-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.titulo2{
+    color: white;
+    font-size: 45px;
+    background-color: black;
+}
+
+.platocarta1, .platocarta2, .platocarta3 {
+    text-align: center;
+}
+
+.platocarta1 figure, .platocarta2 figure, .platocarta3 figure {
+    margin: 0;
+}
+
+.platocarta1 img, .platocarta2 img, .platocarta3 img {
+    width: 100%;
+    height: 180px;
+    max-width: 300px; /* Ajusta el tamaño máximo de las imágenes */
+    margin: 0 auto;
+}
+
+.textplato1, .textplato2, .textplato3 {
+    padding: 10px;
+}
+.nombreplato{
+    font-style: italic;
+    font-size: 25px;
+    color: white;
+}
+
+.descripcionplato{
+     color: white;
+}
+
+/* Botón Más Platos */
+.btn-botton-Carta {
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: #ff2753;
+    border-radius: 50px;
+    color: #ededed;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-botton-Carta:hover {
+    color: black;
+    background-color: white;
+
+}
+/* Sección combos */
+
+.seccioncombos{
+    padding: 0;
+    margin: 0;
+    background: url(../img/background.jpeg);
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+.titulo3{
+    color: white;
+    font-size: 45px;
+    background-color: black;
+}
+
+.combos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.combos-a img{
+    width: 350px;
+    height: 500px;
+}
+
+.nombrecombo{
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+    color: white;
+}
+
+/* Sección POSTRES */
+
+.seccionpostres{
+    padding: 0;
+    margin: 0;
+    background: url(../img/backgraund2.jpeg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.titulo4{
+    padding: 15px;
+    color: white;
+    font-size: 45px;
+    background-color: black;
+}
+
+.Postres-a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.textpotre1 .textpotre2 .textpotre3{
+    align-items: center;
+}
+.imagenespostres{ 
+        width: 350px;
+        height: 500px;
+        padding-left: 85px;
+}
+
+.nombrepostre{
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+    color: white;
+}
+.descripcionpostre{
+    color: white;
+}
+/* Sección FOOTER */
 footer {
     background-color: #333;
     color: #fff;
@@ -129,92 +279,4 @@ footer h3 {
 footer p {
     font-size: 14px;
     line-height: 1.6;
-}
-
-/* Sección Platos a la Carta */
-.platoscarta-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.platocarta1, .platocarta2, .platocarta3 {
-    text-align: center;
-}
-
-.platocarta1 figure, .platocarta2 figure, .platocarta3 figure {
-    margin: 0;
-}
-
-.platocarta1 img, .platocarta2 img, .platocarta3 img {
-    width: 100%;
-    height: auto;
-    max-width: 300px; /* Ajusta el tamaño máximo de las imágenes */
-    margin: 0 auto;
-}
-
-.textplato1, .textplato2, .textplato3 {
-    padding: 10px;
-}
-
-/* Botón Más Platos */
-.btn-botton-Carta {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 25px;
-    background-color: #ff2753;
-    border-radius: 50px;
-    color: #ededed;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    text-align: center;
-}
-
-.btn-botton-Carta:hover {
-    background-color: #e51740;
-}
-/* Sección combos */
-.combo {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.combos-a{
-    text-align: center;
-    margin: 0;
-    display: inline-block;
-    padding: 100px;
-}
-
-
-.combos-a img {
-    width: 300px;
-    height: 520px;
-    margin: 0 auto;
-}
-
-.combos-a figcaption{
-    padding: 10px;
-}
-
-/* Botón Más Platos */
-.btn-botton-Carta {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 25px;
-    background-color: #ff2753;
-    border-radius: 50px;
-    color: #ededed;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    text-align: center;
-}
-
-.btn-botton-Carta:hover {
-    background-color: #e51740;
 }
